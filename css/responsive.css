@@ -1,0 +1,243 @@
+/* Responsive CSS Document */
+
+/* 
+    Created on : 28/10/2016. 
+    Theme Name : Home-Maker.
+    Description: Home-Maker- Responsive html5 template.
+    Version    : 1.1.
+    Author     : @creativegigs.
+   
+*/
+
+
+
+@media (min-width: 992px) {
+	.container {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+@media (max-width: 1800px) {
+    .our-service:before {display: none;}
+}
+@media (max-width: 1366px) {
+    .scroll-top {bottom: 30px; right:30px;}
+}
+@media (max-width: 1199px) {
+  .theme-manage-area .col-md-6 {margin-bottom: 40px;}
+  .service-details-page .service-side-bar .wrapper {padding-right: 0;}
+  .service-details-page .service-details-content .bottom-text .clear-fix img {width: 48%;}
+  .project-details .project-details-text .project-content-text {padding-left: 15px;}
+}
+/*(max-width: 1199px)*/
+
+@media (max-width: 991px) {
+  .theme-manage-area .col-md-6 {min-height: 355px;}
+  .feature-work .feature-item-wrapper .item .img-holder img,.our-team .effect-oscar img,
+  .company-history .left-side, .company-history .right-side {width: 100%;}
+  .company-history .history-panel {padding-left: 0;margin-top: 40px;}
+  .company-progress .opacity h4 {margin-bottom: 20px;}
+  .newsletter .text {width: 100%; float:none; padding-left: 70px;}
+  .newsletter .float-right {width: 100%;float:none; padding-right: 0;margin-top: 20px;}
+  .newsletter .p-color-bg {padding-left: 15px;padding-right: 15px;}
+  .newsletter .text i {left: 0;}
+  footer .footer-logo,footer .footer-link,footer .footer-service,footer .footer-address {width: 50%;padding: 0;margin-bottom: 50px;min-height: 244px;}
+  footer .footer-logo p {margin-right: 0;}
+  .bottom-header .logo {float:none; text-align: center; margin-bottom: 25px;}
+  .short-banner h3,.short-banner a {float:none; margin: 10px 0;}
+  .short-banner {text-align: center;}
+  .theme-manage-area .img-content {margin-top: 0;}
+  .theme-manage-area .img-content img {width: 100%;}
+  .service-details-page .service-side-bar {margin-top: 50px;}
+  .our-partners .item img {margin: 0 auto;}
+  .project-details .project-img-gallery .single-img {margin: 10px 0; float:left; width: 50%;}
+  .project-details .project-details-text .project-content-text {margin-bottom: 50px;}
+  .slide_show .slider_box .item img {width: 100%;}
+  .blog_sidebar .recent_blog .img-content {width: 15%;}
+  .blog_sidebar .recent_blog .text {width: 85%;}
+  .blog_sidebar .recent_blog .text a {display: block;}
+}
+/*(max-width: 991px)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header .bottom-header .single-content ul,header .bottom-header .single-content.bar-fix:before {display: none;}
+  header .bottom-header .single-content {margin-left: 0;}
+  header .bottom-header .single-content.bar-fix {padding-right: 0;margin-left: 35px;}
+  .main-menu .request-quote {font-size: 14px;width: 230px;}
+  .main-menu .nav>li>a {padding: 0 18px;}
+  .short-banner h3 {font-size: 24px;}
+  .feature-work .feature-item-wrapper .item:hover .overlay h5 {
+    -webkit-transform: translate3D(0,40%,0);
+     -moz-transform: translate3D(0,40%,0);
+      -ms-transform: translate3D(0,40%,0);
+       -o-transform: translate3D(0,40%,0);
+          transform: translate3D(0,40%,0);
+    }
+    .service-tab-wrapper .tab-content .left-side ul li {font-size: 18px;}
+    figure.effect-winston figcaption::before {top:-41px;}
+    .latest-news .single-post:hover figcaption:before {
+        -webkit-transform: rotate3d(0,0,1,19deg);
+        transform: rotate3d(0,0,1,19deg);
+    }
+    .latest-news .post a {font-size: 21px;}
+    .newsletter .text p {font-size: 17px;}
+    footer .footer-address {width: 29%;padding-left: 30px;}
+    footer .footer-service {width: 16%;padding-left: 30px;}
+    footer .footer-link {width: 23%;}
+    footer .footer-logo p {margin-right: 25px;}
+}
+/*(min-width: 992px) and (max-width: 1199px)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header .bottom-header .single-content.bar-fix {margin-left: 0;margin-right: 25px;}
+  header .bottom-header .single-content {margin-left: 0;}
+  .main-menu .request-quote {display: none;}
+  .main-menu .nav>li>a {padding: 0 17px;}
+  .service-tab-wrapper .nav {width: 30%;}
+  .service-tab-wrapper .tab-content {width: 70%;padding-left: 40px;}
+  .service-tab-wrapper .tab-content .left-side {width: 100%;margin-bottom: 30px;}
+  .service-tab-wrapper .tab-content .right-side {width: 100%;padding: 0;}
+  .service-banner h2 {font-size: 34px;}
+  footer .footer-logo,footer .footer-link,footer .footer-service,footer .footer-address {padding-left: 15px;padding-right: 15px;}
+  .newsletter .p-color-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 133px 38px;
+    border-bottom-width: 0;
+    border-right-color: #dc9b00;
+  }
+  .newsletter .p-color-bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 133px 38px;
+    border-bottom-width: 0;
+    border-left-color: #dc9b00;
+  }
+  .header-style-two header .bottom-header .single-content.bar-fix {padding-right: 7px;}
+  .project-item-wrapper figure.effect-zoe p.description {bottom: 40px;}
+}
+/*(min-width: 768px) and (max-width: 991px)*/
+
+@media (max-width: 767px) {
+  .main-menu.fixed {max-height:100%;overflow-y:auto;}
+  header .top-header .left-side,header .top-header .right-side {float:none; text-align: center;}
+  header .top-header .right-side {margin-top: 20px;}
+  header .bottom-header .single-content.bar-fix:before,
+  .main-menu .nav>li>a:before, .main-menu .nav>li>a:after {display: none;}
+  header .bottom-header .single-content {margin-left: 0;}
+  header .bottom-header .single-content.bar-fix {padding-right: 0;margin-left: 35px;}
+  header .bottom-header .right-side {float:none;}
+  header .bottom-header .single-content,header .bottom-header .single-content.bar-fix {float:none; margin: 0 0 10px 0; text-align: center; padding: 0;}
+  header .bottom-header .single-content .ficon {display: block; position: relative;}
+  .main-menu nav ul li.dropdown-holder .fa {display: block;}
+  .main-menu .request-quote {right: 15px;}
+  .navbar-nav {margin: 0;}
+  .main-menu .nav>li>a {padding: 0 0 0 15px;line-height: 42px; font-size: 15px;}
+  .main-menu .navbar-nav>li.dropdown-holder .sub-menu {
+    display: none;
+    width: 100%;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
+    -webkit-transform: scaleY(1);
+       -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+         -o-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  .theme-manage-area .col-md-6 {min-height: auto;}
+  .theme-manage-area figure {height:215px;}
+  .service-tab-wrapper .nav,.service-tab-wrapper .tab-content,
+  .service-tab-wrapper .tab-content .left-side,.service-tab-wrapper .tab-content .right-side {width: 100%;}
+  .service-tab-wrapper .tab-content,.service-tab-wrapper .tab-content .right-side {padding: 40px 0 0 0;}
+  figure.effect-winston img,.service-single-page .single-item .img img {width: 100%;}
+  .our-partners .item img {margin: 0 auto;}
+  footer .footer-logo,footer .footer-link,footer .footer-service,footer .footer-address {width: 100%;padding: 0;margin-bottom: 50px;}
+  .header-style-two {background: rgba(3,61,74,1); position: relative;}
+  .header-style-two header .bottom-header .single-content.bar-fix {padding: 0;}
+  .header-style-two header .bottom-header .single-content.mFix {margin-left: 0;}
+  .header-style-two header .bottom-header .single-content .ficon {margin: 5px auto;}
+  .mixitUp-menu ul li {margin: 10px 15px;}
+  .project-item-wrapper figure.effect-zoe img,.blog-single-post .img-holder img {width: 100%;}
+  #blog-post article .administrator .administrator_text {margin-left: 0;}
+  #blog-post .comments_area .single_comment .comment a.reply {right: 0;}
+  #banner h1 {font-size: 42px; line-height: 45px;}
+  #banner h5 {font-size: 17px;line-height: 26px;}
+}
+/*(max-width: 767px)*/
+
+@media (max-width: 650px) {
+  #blog-post .comments_area .single_comment.border_fix {margin-left: 50px;}
+  #blog-post .comments_area .single_comment>img {float:none;margin-bottom: 10px;}
+  #blog-post .comments_area .single_comment .comment {width: 100%;float:none; padding: 0;}
+  #blog-post article .expert_quote_area .col-lg-12 .expert_quote p:before {font-size: 30px;top:30px;left: 20px;}
+  #blog-post article .expert_quote_area .col-lg-12 .expert_quote p {padding-left: 63px;}
+  .contact-us-form #success,
+  .contact-us-form #error {
+    width: 84%;
+    height: auto;
+    top: calc(50% - 50px);
+    left: 8%;
+    padding: 30px 10px;
+    margin:0;
+  }
+}
+
+@media (max-width: 550px) {
+  .inner-banner .opacity h2,.inner-banner .opacity ul {float:none; text-align: center;}
+  .inner-banner .opacity h2 {display: inline-block;margin-bottom: 15px;}
+  .inner-banner .opacity {padding: 75px 0;}
+  .service-details-page .service-details-content .tab-pane>img {margin-bottom: 40px;}
+  .service-details-page {padding-top: 80px;}
+  .project-page .mix,.project-page .mix img {width: 100%;}
+  .project-item-wrapper figure.effect-zoe p.description {bottom: 67px; padding: 0;}
+  #banner h1 {font-size: 29px;line-height: 36px;}
+  #banner h5 {font-size: 11px;}
+}
+
+@media (max-width: 500px) {
+  .company-history .panel-group .panel-body p {padding-left: 0;}
+  .company-history .panel-group .panel-body img {margin-bottom: 10px; position: relative;}
+  .company-history .panel-group .panel-heading a {padding-right: 55px;}
+  .scroll-top {bottom: 10px; right:5px;}
+  footer .bottom-footer p,footer .bottom-footer ul {float:none; text-align: center;}
+  footer .bottom-footer ul {margin-top: 15px;}
+  .team-single-page .main-wrapper {width: 100%;}
+}
+
+@media (max-width: 480px) {
+  .company-progress .opacity .col-xs-6 {width: 100%; margin-bottom: 30px;}
+  .client-slider .single-container>ul {position: static; margin-top: 10px;}
+}
+
+@media (max-width: 450px) {
+  .main-menu .request-quote {width: 190px; font-size: 14px;}
+  .main-menu .request-quote span {width: 40px;}
+  .main-menu .request-quote span i {width: 20px;height: 20px;line-height: 20px;}
+  .main-menu .request-quote span i:before {font-size: 12px;}
+  .service-tab-wrapper .tab-content .left-side .progress-bar span {right: -25px;}
+  .newsletter .float-right form button {width: 44px;}
+  .newsletter .float-right form input { padding: 0 45px 0 15px;}  
+}
+
+@media (max-width: 380px) {
+  .feature-work .owl-carousel .owl-controls {top:0;}
+  .page-pagination ul li {margin: 10px 0;}
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title> L&M PRODECO E. I. R. L</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+			
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+			
+    <!--WhatsApp Widget-->
+    <div id='whatsapp-chat' class='hide'>
+		<div class='header-chat'>
+		  <div class='head-home'>
+			<div class='info-avatar'><img src='https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/LogoProdeco.png?alt=media&token=0fbf38d7-046c-40ac-889d-54372edc9535' /></div>
+			<p><span class="whatsapp-name">PRODECO</span><br><small><i class="fas fa-circle"></i> En línea</small></p>
+	  
+		  </div>
+		  <div class='get-new hide'>
+			<div id='get-label'></div>
+			<div id='get-nama'></div>
+		  </div>
+		</div>
+		<div class='home-chat'>
+	  
+		</div>
+		<div class='start-chat'>
+		  <div pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png" class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body">
+			<div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
+			  <div style="opacity: 0;" class="WhatsappDots__Component-pks5bf-0 eJJEeC">
+				<div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
+				  <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax"></div>
+				  <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz"></div>
+				  <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt"></div>
+				</div>
+			 
+			  </div>
+			 
+			  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+			  <p style="
+			 	    margin-top: -5px;
+					position: absolute;
+					background: #F7F7F6;
+					height: 23px;
+					text-align: center;
+					width: 58px;
+					border-radius: 11px; 
+					margin-left: 135px;
+			  ">HOY</p>
+			  <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq">
+				
+				<div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">PRODECO</div>
+				<div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Hola 👋<br><br>¡Bienvenido al chat de PRODECO!</div>
+				<div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm" id="HoraActual"></div>
+			  </div>
+			  <script>
+				  // JavaScript code
+						showTime();
+						function showTime(){
+						myDate = new Date();
+						hours = myDate.getHours();
+						minutes = myDate.getMinutes();
+						seconds = myDate.getSeconds();
+						if (hours < 10) hours = 0 + hours;
+
+						if (minutes < 10) minutes = "0" + minutes;
+
+						if (seconds < 10) seconds = "0" + seconds;
+
+						$("#HoraActual").text(hours+ ":" +minutes);
+						setTimeout("showTime()", 1000);
+						}
+
+			  </script>
+			</div>
+		  </div>
+	  
+		  <div class='blanter-msg'>
+			<textarea id='chat-input' placeholder='Escribe tu respuesta' maxlength='120' row='1'></textarea>
+			<a href='javascript:void;' id='send-it'><svg viewBox="0 0 448 448"><path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"/></svg></a>
+	  
+		  </div>
+		</div>
+		<div id='get-number'></div><a class='close-chat' href='javascript:void'>×</a>
+	  </div>
+	  <a class='blantershow-chat' href='javascript:void' title='Show Chat'><svg width="20" viewBox="0 0 24 24"><defs/><path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"/><path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"/><path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg> 
+		<strong>Chat en línea</strong> </a>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script>
+			/* Whatsapp Chat Widget by www.bloggermix.com */
+		  $(document).on("click", "#send-it", function() {
+			var a = document.getElementById("chat-input");
+			if ("" != a.value) {
+			  var b = $("#get-number").text(),
+				c = document.getElementById("chat-input").value,
+				d = "https://web.whatsapp.com/send",
+				e = b,
+				f = "&text=" + c;
+			  if (
+				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+				  navigator.userAgent
+				)
+			  )
+				var d = "whatsapp://send";
+			  var g = d + "?phone=+51926599763" + e + f;
+			  window.open(g, "_blank");
+			}
+		  }),
+			$(document).on("click", ".informasi", function() {
+			  (document.getElementById("get-number").innerHTML = $(this)
+				.children(".my-number")
+				.text()),
+				$(".start-chat,.get-new")
+				  .addClass("show")
+				  .removeClass("hide"),
+				$(".home-chat,.head-home")
+				  .addClass("hide")
+				  .removeClass("show"),
+				(document.getElementById("get-nama").innerHTML = $(this)
+				  .children(".info-chat")
+				  .children(".chat-nama")
+				  .text()),
+				(document.getElementById("get-label").innerHTML = $(this)
+				  .children(".info-chat")
+				  .children(".chat-label")
+				  .text());
+			}),
+			$(document).on("click", ".close-chat", function() {
+			  $("#whatsapp-chat")
+				.addClass("hide")
+				.removeClass("show");
+			}),
+			$(document).on("click", ".blantershow-chat", function() {
+			  $("#whatsapp-chat")
+				.addClass("show")
+				.removeClass("hide");
+			});
+		  
+		  </script>
+	 
+<!--Fin WhatsApp Widge -->
+
+
+
+
+
+			<!-- Header _________________________________ -->
+			<header class="main-header">
+			
+
+
+				<div class="bottom-header">
+					<div class="container">
+						<div class="logo float-left"><a href="index.html" style="vertical-align:middle;"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/PRODECO.jpg?alt=media&token=894939b5-67f4-490a-8e37-0403f4f8556f" alt="LOGO"></a></div>
+
+						<div class="right-side float-right" style="margin-top: 10px;">
+							<div class="single-content float-left bar-fix">
+								<i class="ficon flaticon-call-line"></i>
+								<p><a style="color: gray;" href="tel:+51926599763">926599763</a></p>
+								<span><a style="color: #cbd1da;"  href="mailto:ventas@lmprodeco.com">ventas@lmprodeco.com</a></span>
+							</div> <!-- /.single-content -->
+
+							<div class="single-content float-left bar-fix">
+								<i class="ficon flaticon-map-line"></i>
+								<p>Calle José Díaz 325 zona A</p>
+								<span>San Juan de Miraflores</span>
+							</div> <!-- /.single-content -->
+
+							<div class="single-content float-left">
+								<ul>
+									<li><a href="#" class="tran3s round-border icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="https://api.whatsapp.com/send?phone=926599763&text=Hola%20LMPRODECO" class="tran3s round-border icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+								</ul>
+							</div> <!-- /.single-content -->
+						</div> <!-- /.right-side -->
+					</div> <!-- /.container -->
+				</div> <!-- /.bottom-header -->
+			</header>
+
+
+
+
+			<!-- Theme Main Menu ____________________________ -->
+			<div class="main-menu">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="navbar">
+					   <!-- Brand and toggle get grouped for better mobile display -->
+					   <div class="navbar-header">
+					     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					       <span class="sr-only">Toggle navigation</span>
+					       <span class="icon-bar"></span>
+					       <span class="icon-bar"></span>
+					       <span class="icon-bar"></span>
+					     </button>
+					   </div>
+					   <!-- Collect the nav links, forms, and other content for toggling -->
+					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
+					     <ul class="nav navbar-nav">
+					       <li class="dropdown-holder current-page-item"><a href="index.html">INICIO</a>
+					       </li>
+					       <li><a href="nosotros.html">NOSOTROS</a></li>
+					       <li class="dropdown-holder"><a href="./lineas-de-negocio.html">LÍNEAS DE NEGOCIO</a>
+								<ul class="sub-menu">
+									<li><a href="./lineas-de-negocio.html" class="tran3s">Construcción Drywall</a></li>
+									<li><a href="./lineas-de-negocio.html" class="tran3s">Proyectos Y Consultoria</a></li>
+									<li><a href="./lineas-de-negocio.html" class="tran3s">Diseño arquitectónico</a></li>
+									<li><a href="./lineas-de-negocio.html" class="tran3s">Fabricación de estructura metalica</a></li>
+									<li><a href="./lineas-de-negocio.html" class="tran3s">remodelación</a></li>
+									<li><a href="./lineas-de-negocio.html" class="tran3s">Publicidad y marketing</a></li>
+								</ul>	
+					       </li>
+					       <li class="dropdown-holder"><a href="servicios.html">SERVICIOS</a>
+								 
+					       </li>
+					       <li class="dropdown-holder"><a href="#">PRODUCTOS</a>
+								<ul class="sub-menu">
+									<li><a href="#" class="tran3s">ARMARIOS</a></li>
+									<li><a href="#" class="tran3s">COUNTERS</a></li>
+									<li><a href="#" class="tran3s">CREDENZAS</a></li>
+									<li><a href="#" class="tran3s">ESCRITORIOS</a></li>
+									<li><a href="#" class="tran3s">ESTANTES</a></li>
+									<li><a href="#" class="tran3s">GAVETEROS</a></li>
+									<li><a href="#" class="tran3s">MESA DE REUNIONES</a></li>
+									<li><a href="#" class="tran3s">SILLAS DE OFICINA</a></li>
+								</ul>	
+					       </li>
+					       <li class="dropdown-holder"><a href="#">TRABAJOS REALIZADOS</a>
+					       		<ul class="sub-menu">
+									<li><a href="#" class="tran3s">CORPORATIVO</a></li>
+									<li><a href="#" class="tran3s">ESTADO </a></li>
+									<li><a href="#" class="tran3s">FINANCIERAS </a></li>
+									<li><a href="#" class="tran3s">SALUD </a></li>
+								</ul>
+					       </li>
+					       <li><a href="clientes.html">CLIENTES</a></li>
+						   <a href="contactar.html" class="tran3s request-quote p-color-bg">COTIZAR<span><i class="ficon flaticon-arrows"></i></span></a>
+					     </ul>
+					   </div><!-- /.navbar-collapse -->
+					</nav>
+
+				
+				</div> <!-- /.container -->
+			</div> <!-- /.main-menu -->
+
+
+
+			<!-- Theme Banner ________________________________ -->
+			<div id="banner">
+	        	<div class="rev_slider_wrapper">
+					<!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+						<div id="main-banner-slider" class="rev_slider" data-version="5.0.7">
+							<ul>
+
+								<!-- SLIDE1  -->
+								<li data-index="rs-280" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-saveperformance="off"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="images/home/slide-1.jpg"  alt="image"  class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<!-- LAYERS -->
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-102','-102','-102','-102']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1>Instalaciones  <br>de DRYWALL</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['18','18','18','-20']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h5> Brindamos un servicio de gran Calidad y con resultados
+											<br> que dejan satisfechos a cada uno de nuestros clientes. 
+										</h5>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="servicios.html" class="service-button p-color-bg hvr-bounce-to-right">Servicios</a>
+									</div>
+									
+									<!-- LAYER NR. 4 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['192','217','227','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','175']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="contactar.html" class="quote-button hvr-bounce-to-right">Cotizar</a>
+									</div>
+								
+								</li>
+
+
+								<!-- SLIDE2  -->
+								<li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/slide-2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="images/home/slide-2.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+									<!-- LAYERS -->
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-102','-102','-102','-102']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1> Fabricación de
+											<br> estructura metalica</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['18','18','18','-20']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h5>Nuestra empresa ofrece el servicio de pintura, con profesionales que no solo 
+											<br>realizamos trabajos A1, nos convertimos en socios estratégicos para su empresa.</h5>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="servicios.html" class="service-button p-color-bg hvr-bounce-to-right">Servicios</a>
+									</div>
+									
+									<!-- LAYER NR. 4 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['192','217','227','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','175']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="contactar.html" class="quote-button hvr-bounce-to-right">Cotizar</a>
+									</div>
+								</li>
+
+							
+								<!-- SLIDE3  -->
+								<li data-index="rs-20" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/slide-5.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="images/home/slide-5.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+									<!-- LAYERS -->
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-102','-102','-102','-102']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1>Fabricación de 
+											<br>muebles en melamine</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['18','18','18','-20']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h5>Lorem ipsum dolor sit amet, nam te agam soleat cetero,<br>his ad exerci quodsi sententiae putent bonorum ne.</h5>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['0','25','35','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="servicios.html" class="service-button p-color-bg hvr-bounce-to-right">Servicios</a>
+									</div>
+									
+									<!-- LAYER NR. 4 -->
+									<div class="tp-caption"
+										data-x="['left','left','left','left']" data-hoffset="['192','217','227','15']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','175']"
+										data-transform_idle="o:1;"
+										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+										data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" 
+										data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="contactar.html" class="quote-button hvr-bounce-to-right">Cotizar</a>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div><!-- END REVOLUTION SLIDER -->
+	        </div> <!--  /#banner -->
+
+
+	        <!-- Short banner __________________________ -->
+	        <div class="short-banner">
+	        	<div class="opacity">
+	        		<div class="container">
+	        			<h3 class="float-left">Brindamos experiencia y una solución<span>de alto nivel </span> para usted!!</h3>
+	        			<a href="contactar.html" class="float-right theme-button">Cotizar</a>
+	        		</div>
+	        	</div>
+	        </div>
+
+<br>
+<br>
+<br>
+			
+	        <!-- Our Partners ________________________ -->
+	        <div class="our-partners wow fadeInUp">
+	        	<div class="container">
+	        		<div class="theme-title center">
+	        			<h2>NUESTROS CLIENTES						</h2>
+	        		</div> <!-- /.theme-title -->
+
+	        		<p class="subs">Somos una empresa con amplia experiencia en el desarrollo de proyectos.
+						Nuestro personal está respaldado por su gran preparación y amplia experiencia                           </p>
+	        		<div class="row">
+	        			<div class="partner-slider">
+	        				<div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/clientes%2F01.png?alt=media&token=cfa1610a-5b55-432d-81d2-e139f8fd55e4" alt=""></div>
+	        				<div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/clientes%2F02.png?alt=media&token=07fa176d-1fba-47f9-8745-310083b2e14f" alt=""></div>
+	        				<div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/clientes%2F03.png?alt=media&token=0d2d300c-e814-495b-9858-909f37eb78bc" alt=""></div>
+	        				<div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/clientes%2F04.png?alt=media&token=1ddfbb88-4a0f-4b0d-8301-4ce5d15127fa" alt=""></div>
+	        				<div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/clientes%2F05.png?alt=media&token=a2faeb0d-bc81-4c3e-b5ee-522332190e6f" alt=""></div>
+	        			</div> <!-- /.partner-slider -->
+	        		</div> <!-- /.row -->
+	        	</div> <!-- /.container -->
+	        </div> <!-- /.our-partners -->
+
+ 
+
+
+  
+
+			<br>
+			<br>
+			<br>
+		 
+
+ 
+
+
+	        <!-- Service Banner ____________________________ -->
+	        <div class="service-banner wow fadeInUp">
+	        	<div class="opacity">
+	        		<div class="container">
+	        			<h4 class="p-color">L&M PRODECO E. I. R. L</h4>
+	        			<h2>BRINDAMOS UN SERVICIO ESTABLE CON EXPERTOS</h2>
+	        			<a href="contactar.html" class="tran3s btn1 p-color-bg hvr-bounce-to-right wow fadeInLeft">Contactar</a>
+	        			<a href="servicios.html" class="tran3s btn2 hvr-bounce-to-right wow fadeInRight">Ver servicios</a>
+	        		</div> <!-- /.container -->
+	        	</div> <!-- /.opacity -->
+	        </div> <!-- /.service-banner  -->
+
+
+ 
+
+			<br>
+			<br>
+			<br>
+		 
+ 
+ 
+ 
+
+	    <br>
+	    <br>
+	    <br>
+	 
+
+
+			<!-- Contact Form _____________________ -->
+			<div class="contact-us-page">
+				<div class="container">
+	        		<h2>Nos encantaría saber de sobre ti					</h2>
+	        		<p>Llame o envíe nuestro formulario en línea para solicitar un presupuesto o para preguntas generales. ¡Esperamos poder servirle!</p>
+
+	        		<div class="form-wrapper row contact-us-form">
+	        			<form action="inc/sendemail.php" class="form-validation" autocomplete="off">
+	        				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	        					<div class="single-input">
+	        						<input type="text" placeholder="Ingrese su nombre" name="name">
+	        					</div> <!-- /.single-input -->
+	        				</div>
+
+	        				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	        					<div class="single-input">
+	        						<input type="email" placeholder="Ingrese su correo" name="email">
+	        					</div> <!-- /.single-input -->
+	        				</div>
+
+	        				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	        					<div class="single-input">
+	        						<textarea placeholder="Ingrese su mensaje" name="message"></textarea>
+	        					</div> <!-- /.single-input -->
+	        				</div>
+
+	        				<button class="theme-button">Enviar Mensaje</button>
+	        			</form>
+
+	        			<!-- Contact alert -->
+						<div class="alert_wrapper" id="alert_success">
+							<div id="success">
+								<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+								<div class="wrapper">
+					               	<p>Your message was sent successfully.</p>
+					             </div>
+					        </div>
+					    </div> <!-- End of .alert_wrapper -->
+					    <div class="alert_wrapper" id="alert_error">
+					        <div id="error">
+					           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+					           	<div class="wrapper">
+					               	<p>Sorry!Something Went Wrong.</p>
+					            </div>
+					        </div>
+					    </div> <!-- End of .alert_wrapper -->
+	        		</div> <!-- /.form-wrapper -->
+				</div> <!-- /.container -->
+			</div> <!-- /.contact-us-page -->
+
+ 
+
+
+	        <!-- Footer ______________________________ -->
+	        <footer>
+	        	<div class="opacity">
+	        		<div class="top-footer">
+	        			<div class="container">
+
+	        				<div class="footer-logo float-left">
+	        					<a href="index.html"><img width="100px" src="https://firebasestorage.googleapis.com/v0/b/lmprodeco.appspot.com/o/PRODECO.jpg?alt=media&token=894939b5-67f4-490a-8e37-0403f4f8556f" alt="Logo"></a>
+	        					<p> En PRODECO brindamos un servicio de gran Calidad y con resultados que dejan
+									satisfechos a cada uno de nuestros clientes. </p>
+	        				</div> <!-- /.footer-logo -->
+
+	        				<div class="footer-link float-left">
+	        					<h4>Enlaces rápidos</h4>
+
+	        					<ul>
+	        						<li><a href="index.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Inicio </a></li>
+	        						<li><a href="nosotros.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Nosotros</a></li>
+	        						<li><a href="lineas-de-negocio.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Líneas de negocio</a></li>
+	        						<li><a href="contactar.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Cotizar</a></li>
+	        					</ul> 
+	        				</div>
+
+	        				<div class="footer-service float-left">
+	        					<h4>Servicios</h4>
+
+	        					<ul> 
+	        						<li><a href="servicios.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Construcción Drywall </a></li>
+	        						<li><a href="servicios.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Proyectos Y Consultoria</a></li>
+	        						<li><a href="servicios.html" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i> Diseño arquitectónico</a></li> 
+	        					</ul>
+	        				</div>
+
+	        				<div class="footer-address float-left">
+	        					<h4>Ponerse en contacto </h4>
+								
+								<ul>
+									<li><span class="ficon flaticon-map-solid"></span> Calle José Díaz 325 zona A - San Juan de Miraflores</li>
+									<li><span class="ficon flaticon-call-solid"></span> <a style="color: #cbd1da;" href="tel:+51926599763">926599763</a></li>
+									<li><span class="ficon flaticon-envelope"></span> <a style="color: #cbd1da;"  href="mailto:ventas@lmprodeco.com">ventas@lmprodeco.com</a></li>
+									<li><span class="ficon flaticon-clock"></span>24/7</li>
+								</ul>
+	        				</div>
+	        			</div> <!-- /.conatiner -->
+	        		</div> <!-- /.top-footer -->
+
+	        		<div class="bottom-footer clear-fix">
+	        			<div class="container">
+	        				<p class="float-left">Copyright <a href="https://tuncardev.com" target="_blank">tuncardev</a> @2021</p>
+
+		        			<ul class="float-right">
+								<li><a href="#" class="tran3s icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				        		<li><a href="#" class="tran3s icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+							 
+							</ul>
+	        			</div>
+	        		</div> <!-- /.bottom-footer -->
+	        	</div> <!-- /.opacity -->
+	        </footer>
+
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s p-color">
+				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+			</button>
+			<!-- pre loader  -->
+		 	<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
+
+
+
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+
+		<!-- Vendor js _________ -->
+		<!-- revolution -->
+		<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.video.min.js"></script>
+
+		<!-- Google map js -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8VrXgGZ3QSC-0XubNhuB2uKKCwqVaD0&callback=googleMap" type="text/javascript"></script> <!-- Gmap Helper -->
+		<script src="vendor/gmaps.min.js"></script>
+		<!-- Bootstrap Select JS -->
+		<script type="text/javascript" src="vendor/bootstrap-select/dist/js/bootstrap-select.js"></script>
+		<!-- WOW js -->
+		<script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- js count to -->
+		<script type="text/javascript" src="vendor/jquery.appear.js"></script>
+		<script type="text/javascript" src="vendor/jquery.countTo.js"></script>
+		<!-- fancy box -->
+		<script type="text/javascript" src="vendor/fancy-box/jquery.fancybox.pack.js"></script>
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
