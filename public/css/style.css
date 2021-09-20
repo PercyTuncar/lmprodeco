@@ -3779,3 +3779,10 @@ width: 60%;
     color:#fff;
     margin-bottom: 10px;
   }
+
+
+@media (min-width: 768px){
+  .col-sm-4 {
+    width: 30.333333%;
+}
+}
