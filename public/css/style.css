@@ -3271,13 +3271,15 @@ footer .bottom-footer {
   border:none;
 }
 .logo img{
-width: 100px;
+height: 75px;
 }
-
-
-
-
-
+@media screen and (max-width: 467px) {
+  .logo img{
+    height: 75px;
+    margin-top: -13px;
+    padding: 5px;
+    }
+}
 
 
 
