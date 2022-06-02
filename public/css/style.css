@@ -570,15 +570,15 @@ header .bottom-header .single-content ul li a:hover {
           transform: scaleY(1);
 }
 .main-menu .navbar-nav>li.dropdown-holder .sub-menu li a {
-  line-height: 40px;
+  line-height: 25px;
   color:#6f6f6f;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding: 10px 20px;
   display: block;
   border-bottom: 1px solid #ededed;
   position: relative;
   z-index: 1;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 .main-menu .navbar-nav>li.dropdown-holder .sub-menu li:last-child a {
