@@ -231,3 +231,6 @@ jQuery(document).on('ready', function () {
 		googleMap();
 	})(jQuery);
 });
+
+
+

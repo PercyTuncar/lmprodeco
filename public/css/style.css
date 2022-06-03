@@ -3785,6 +3785,162 @@ width: 60%;
 
 @media (min-width: 768px){
   .col-sm-4 {
-    width: 30.333333%;
+    width: 30.333333%; 
 }
 }
+
+
+/*Estilos para el sub menu 1*/  
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px; } 
+
+
+
+/*Estilos para el sub menu 2*/  
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#tocar {position: absolute; opacity: 0; height: 0px;}    
+
+#tocar:checked + .slide {height: 155px; } 
+
+
+
+
+/*Estilos para el sub menu 3*/ 
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#tocarperfiles {position: absolute; opacity: 0; height: 0px;}    
+
+#tocarperfiles:checked + .slide {height: 200px; } 
+
+
+/*Estilos para el sub menu 4*/
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#tocarlanas {position: absolute; opacity: 0; height: 0px;}    
+
+#tocarlanas:checked + .slide {height: 50px; } 
+
+
+/*Estilos para el sub menu 5*/
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#tocartecho {position: absolute; opacity: 0; height: 0px;}    
+
+#tocartecho:checked + .slide {height: 130px; } 
+
+
+/*Estilos para el sub menu 6*/
+span.lista::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+.slide li { 
+  list-style: circle;
+}
+
+ 
+
+#tocarcomplemento {position: absolute; opacity: 0; height: 0px;}    
+
+#tocarcomplemento:checked + .slide {height: 250px; } 
+
+ 
